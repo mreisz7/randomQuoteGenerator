@@ -4,7 +4,7 @@
 }
 
 body {
-     background-color: #656C72;
+     background-color: #424242;
      font-family: 'Cinzel', Arial, sans-serif;
 }
 
@@ -15,16 +15,15 @@ body #container {
      transform: translate(-50%, -50%);
      max-width: 50em;
      width: 90%;
-     z-index: 100;
+     z-index: 10;
      cursor: pointer;
 }
 
 body #container #quote-area {
-     background-color: #4286f4;
+     background-color: #E74C3C;
      border-radius: 15px;
      padding: 10px;
      color: #fff;
-     box-shadow: 2px 2px 1px #222;
 }
 
 body #container #quote-area #quote-header {
@@ -68,6 +67,7 @@ body #prev-arrow {
      display: block;
      width: 50px;
      height: 100%;
+     z-index: 20;
 }
 
 body #next-arrow {
@@ -78,6 +78,7 @@ body #next-arrow {
      display: block;
      width: 50px;
      height: 100%;
+     z-index: 20;
 }
 
 body img.arrow {
@@ -85,19 +86,31 @@ body img.arrow {
      top: 50%;
      left: 50%;
      transform: translate(-50%, -50%);
-     width: 100%;
+     width: 50px;
      margin: auto;
      color: #fff;
      cursor: pointer;
+     z-index: 20;
 }
 
 body img.arrow:hover {
-     width: 110%;
+     width: 60px;
 }
 
 body #footer #copyright {
      position: fixed;
      bottom: 10px;
      left: 10px;
+     color: #fff;
+}
+
+body #footer #footer-link {
+     position: fixed;
+     bottom: 10px;
+     right: 10px;
+     color: #fff;
+}
+
+body #footer #footer-link:hover {
      color: #fff;
 }
