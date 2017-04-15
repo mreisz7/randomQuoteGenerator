@@ -14,13 +14,13 @@ body #container {
      left: 50%;
      transform: translate(-50%, -50%);
      max-width: 50em;
-     width: 90%;
+     width: 75%;
      z-index: 10;
      cursor: pointer;
 }
 
 body #container #quote-area {
-     background-color: #E74C3C;
+     background-color: #f33939;
      border-radius: 15px;
      padding: 10px;
      color: #fff;
