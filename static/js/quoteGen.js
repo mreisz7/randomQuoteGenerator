@@ -5,18 +5,9 @@ var quoteIndex = 0;
 getNewQuote();
 
 function getNewQuote() {
-    $.ajax({
-        url: "http://api.forismatic.com/api/1.0/",
-        jsonp: "jsonp",
-        dataType: "jsonp",
-        data: {
-            method: "getQuote",
-            lang: "en",
-            format: "jsonp"
-        }
-    })
-    .done(returnQuote)
-    .fail(handleErr);
+    $.getJSON("https://quotesondesign.com/wp-json/posts?filter[orderby]=rand&filter[posts_per_page]=1&_jsonp=?", function(json){
+        returnQuote(json[0]);
+    });
 };
 
 function returnQuote(response) {
@@ -26,13 +17,9 @@ function returnQuote(response) {
     console.log(quoteIndex);
 };
 
-function handleErr(jqxhr, textStatus, err) {
-    console.log("Request Failed: " + textStatus + ", " + err);
-};
-
 function displayQuote() {
-    $("#quote").text(quoteArray[quoteIndex].quoteText);
-    $("#author").text(quoteArray[quoteIndex].quoteAuthor);
+    $("#quote p").replaceWith(quoteArray[quoteIndex].content);
+    $("#author").text(quoteArray[quoteIndex].title);
     console.log(quoteArray[quoteIndex].quoteText);
 };
 
