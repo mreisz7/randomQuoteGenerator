@@ -41,13 +41,13 @@ body #container #quote-area #quote-body {
      padding: 20px;
 }
 
-body #container #quote-area #quote-body #quote {
+body #container #quote-area #quote-body #quote p {
      font-size: 20px;
      text-align: justify;
      line-height: 35px;
 }
 
-body #container #quote-area #quote-body #quote::first-letter {
+body #container #quote-area #quote-body #quote p::first-letter {
      font-size: 40px;
      line-height: 35px;
      font-weight: bold;
