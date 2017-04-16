@@ -15,8 +15,10 @@ body #container {
      transform: translate(-50%, -50%);
      max-width: 50em;
      width: 75%;
+     max-height: 85vh;
      z-index: 10;
      cursor: pointer;
+     overflow-y: auto;
 }
 
 body #container #quote-area {
@@ -24,17 +26,7 @@ body #container #quote-area {
      border-radius: 15px;
      padding: 10px;
      color: #fff;
-}
-
-body #container #quote-area #quote-header {
-     height: 20%;
-}
-
-body #container #quote-area #quote-header .title {
-     font-family: Arial;
-     font-weight: bold;
-     font-size: 40px;
-     margin: 0;
+     overflow-y: auto;
 }
 
 body #container #quote-area #quote-body {
@@ -42,20 +34,21 @@ body #container #quote-area #quote-body {
 }
 
 body #container #quote-area #quote-body #quote p {
-     font-size: 20px;
+     font-size: .25in;
      text-align: justify;
-     line-height: 35px;
+     line-height: .4in;
 }
 
 body #container #quote-area #quote-body #quote p::first-letter {
-     font-size: 40px;
-     line-height: 35px;
+     font-size: .5in;
+     line-height: .4in;
      font-weight: bold;
 }
 
 body #container #quote-area #quote-body #author {
      display: block;
-     font-size: 20px;
+     font-size: .25in;
+     font-style: italic;
      text-align: right;
 }
 

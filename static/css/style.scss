@@ -20,26 +20,17 @@ body {
           transform: translate(-50%, -50%);
           max-width: 50em;
           width: 75%;
+          max-height: 85vh;
           z-index: 10;
           cursor: pointer;
+          overflow-y: auto;
 
           #quote-area {
                background-color: $quote-background;
                border-radius: 15px;
                padding: 10px;
                color: $quote-color;
-
-               #quote-header {
-                    height: 20%;
-
-                    .title {
-                         font-family: Arial;
-                         font-weight: bold;
-                         font-size: 40px;
-                         margin: 0;
-                    }
-
-               }
+               overflow-y: auto;
 
                #quote-body {
                     padding: 20px;
@@ -47,13 +38,13 @@ body {
                     #quote {
 
                          p {
-                              font-size: 20px;
+                              font-size: .25in;
                               text-align: justify;
-                              line-height: 35px;
+                              line-height: .4in;
 
                               &::first-letter {
-                                   font-size: 40px;
-                                   line-height: 35px;
+                                   font-size: .5in;
+                                   line-height: .4in;
                                    font-weight: bold;
                               }
 
@@ -61,10 +52,10 @@ body {
 
                     }
 
-
                     #author {
                          display: block;
-                         font-size: 20px;
+                         font-size: .25in;
+                         font-style: italic;
                          text-align: right;
                     }
 
