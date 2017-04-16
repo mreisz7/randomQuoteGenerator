@@ -26,17 +26,6 @@ body #container #quote-area {
      color: #fff;
 }
 
-body #container #quote-area #quote-header {
-     height: 20%;
-}
-
-body #container #quote-area #quote-header .title {
-     font-family: Arial;
-     font-weight: bold;
-     font-size: 40px;
-     margin: 0;
-}
-
 body #container #quote-area #quote-body {
      padding: 20px;
 }
