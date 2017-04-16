@@ -15,8 +15,10 @@ body #container {
      transform: translate(-50%, -50%);
      max-width: 50em;
      width: 75%;
+     max-height: 85vh;
      z-index: 10;
      cursor: pointer;
+     overflow-y: auto;
 }
 
 body #container #quote-area {
@@ -24,6 +26,7 @@ body #container #quote-area {
      border-radius: 15px;
      padding: 10px;
      color: #fff;
+     overflow-y: auto;
 }
 
 body #container #quote-area #quote-body {

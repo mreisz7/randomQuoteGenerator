@@ -20,14 +20,17 @@ body {
           transform: translate(-50%, -50%);
           max-width: 50em;
           width: 75%;
+          max-height: 85vh;
           z-index: 10;
           cursor: pointer;
+          overflow-y: auto;
 
           #quote-area {
                background-color: $quote-background;
                border-radius: 15px;
                padding: 10px;
                color: $quote-color;
+               overflow-y: auto;
 
                #quote-body {
                     padding: 20px;
