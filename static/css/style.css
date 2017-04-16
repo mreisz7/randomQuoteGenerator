@@ -31,20 +31,21 @@ body #container #quote-area #quote-body {
 }
 
 body #container #quote-area #quote-body #quote p {
-     font-size: 20px;
+     font-size: .25in;
      text-align: justify;
-     line-height: 35px;
+     line-height: .4in;
 }
 
 body #container #quote-area #quote-body #quote p::first-letter {
-     font-size: 40px;
-     line-height: 35px;
+     font-size: .5in;
+     line-height: .4in;
      font-weight: bold;
 }
 
 body #container #quote-area #quote-body #author {
      display: block;
-     font-size: 20px;
+     font-size: .25in;
+     font-style: italic;
      text-align: right;
 }
 
