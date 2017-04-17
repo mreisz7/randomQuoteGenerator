@@ -2,6 +2,8 @@ $background-color: #424242;
 $quote-background: #f33939;
 $quote-color: #fff;
 $quote-button: #3aba3a;
+$twitter-button: #1da1f2;
+$twitter-button-hover: #fff;
 
 @import url('https://fonts.googleapis.com/css?family=Cinzel');
 
@@ -22,7 +24,6 @@ body {
           width: 75%;
           max-height: 85vh;
           z-index: 10;
-          cursor: pointer;
           overflow-y: auto;
 
           #quote-area {
@@ -52,17 +53,32 @@ body {
 
                     }
 
-                    #author {
-                         display: block;
-                         font-size: .25in;
-                         font-style: italic;
-                         text-align: right;
+                    #quote-footer {
+
+                         #tweet-button {
+                              display: inline-block;
+                              // text-decoration: none;
+
+                              #twitter-logo {
+                                   height: 30px;
+                                   width: 30px;
+                              }
+
+                         }
+
+                         #author {
+                              display: inline-block;
+                              float: right;
+                              font-size: .25in;
+                              font-style: italic;
+                              text-align: right;
+                         }
+
                     }
 
                }
 
           }
-
 
      }
 

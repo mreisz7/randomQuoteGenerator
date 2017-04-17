@@ -37,4 +37,10 @@ $("#prev-arrow").click(function() {
         quoteIndex--;
     }
     displayQuote();
-})
+});
+
+$('#tweet-button').click(function (e) {
+    var tweetText = $("#quote p").text().trim() + " -" + $("#author").text().trim();
+    var tweet = 'http://twitter.com/home?status=' + encodeURIComponent(tweetText);
+    window.open(tweet, '_blank');
+});
