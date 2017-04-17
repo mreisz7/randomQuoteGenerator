@@ -17,7 +17,6 @@ body #container {
      width: 75%;
      max-height: 85vh;
      z-index: 10;
-     cursor: pointer;
      overflow-y: auto;
 }
 
@@ -45,8 +44,18 @@ body #container #quote-area #quote-body #quote p::first-letter {
      font-weight: bold;
 }
 
-body #container #quote-area #quote-body #author {
-     display: block;
+body #container #quote-area #quote-body #quote-footer #tweet-button {
+     display: inline-block;
+}
+
+body #container #quote-area #quote-body #quote-footer #tweet-button #twitter-logo {
+     height: 30px;
+     width: 30px;
+}
+
+body #container #quote-area #quote-body #quote-footer #author {
+     display: inline-block;
+     float: right;
      font-size: .25in;
      font-style: italic;
      text-align: right;
